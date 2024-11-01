@@ -55,6 +55,30 @@
     {
       "type": "single",
       "resource": "createmetallurgy:fluid/zinc/molten_zinc_still"
+    },
+    {
+      "type": "single",
+      "resource": "createmetallurgy:fluid/bronze/molten_bronze_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createmetallurgy:fluid/bronze/molten_bronze_still"
+    },
+    {
+      "type": "single",
+      "resource": "createmetallurgy:fluid/lead/molten_lead_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createmetallurgy:fluid/lead/molten_lead_still"
+    },
+    {
+      "type": "single",
+      "resource": "createmetallurgy:fluid/tin/molten_tin_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createmetallurgy:fluid/tin/molten_tin_still"
     }
   ]
 }

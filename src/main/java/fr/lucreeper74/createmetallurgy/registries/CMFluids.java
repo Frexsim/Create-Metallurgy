@@ -153,5 +153,65 @@ public class CMFluids {
             .build()
             .register();
 
+    // Molten Bronze
+    public static final ResourceLocation MOLTEN_BRONZE_STILL_RL = CreateMetallurgy.genRL("fluid/bronze/molten_bronze_still");
+    public static final ResourceLocation MOLTEN_BRONZE_FLOW_RL = CreateMetallurgy.genRL("fluid/bronze/molten_bronze_flow");
+    public static final FluidEntry<ForgeFlowingFluid.Flowing> MOLTEN_BRONZE = REGISTRATE.fluid("molten_bronze", MOLTEN_BRONZE_STILL_RL, MOLTEN_BRONZE_FLOW_RL)
+            .properties(b -> b.viscosity(2000)
+                    .density(1400)
+                    .lightLevel(10)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
+                    .canHydrate(false).canDrown(false).canSwim(false))
+            .fluidProperties(p -> p.levelDecreasePerBlock(2)
+                    .tickRate(25)
+                    .slopeFindDistance(3)
+                    .explosionResistance(100f))
+            .tag(forgeFluidTag("molten_bronze"), forgeFluidTag("molten_materials"))
+            .source(ForgeFlowingFluid.Source::new)
+            .bucket()
+            .build()
+            .register();
+
+    // Molten Lead
+    public static final ResourceLocation MOLTEN_LEAD_STILL_RL = CreateMetallurgy.genRL("fluid/lead/molten_lead_still");
+    public static final ResourceLocation MOLTEN_LEAD_FLOW_RL = CreateMetallurgy.genRL("fluid/lead/molten_lead_flow");
+    public static final FluidEntry<ForgeFlowingFluid.Flowing> MOLTEN_LEAD = REGISTRATE.fluid("molten_lead", MOLTEN_LEAD_STILL_RL, MOLTEN_LEAD_FLOW_RL)
+            .properties(b -> b.viscosity(2000)
+                    .density(1400)
+                    .lightLevel(10)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
+                    .canHydrate(false).canDrown(false).canSwim(false))
+            .fluidProperties(p -> p.levelDecreasePerBlock(2)
+                    .tickRate(25)
+                    .slopeFindDistance(3)
+                    .explosionResistance(100f))
+            .tag(forgeFluidTag("molten_lead"), forgeFluidTag("molten_materials"))
+            .source(ForgeFlowingFluid.Source::new)
+            .bucket()
+            .build()
+            .register();
+
+    // Molten Tin
+    public static final ResourceLocation MOLTEN_TIN_STILL_RL = CreateMetallurgy.genRL("fluid/tin/molten_tin_still");
+    public static final ResourceLocation MOLTEN_TIN_FLOW_RL = CreateMetallurgy.genRL("fluid/tin/molten_tin_flow");
+    public static final FluidEntry<ForgeFlowingFluid.Flowing> MOLTEN_TIN = REGISTRATE.fluid("molten_tin", MOLTEN_TIN_STILL_RL, MOLTEN_TIN_FLOW_RL)
+            .properties(b -> b.viscosity(2000)
+                    .density(1400)
+                    .lightLevel(10)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
+                    .canHydrate(false).canDrown(false).canSwim(false))
+            .fluidProperties(p -> p.levelDecreasePerBlock(2)
+                    .tickRate(25)
+                    .slopeFindDistance(3)
+                    .explosionResistance(100f))
+            .tag(forgeFluidTag("molten_tin"), forgeFluidTag("molten_materials"))
+            .source(ForgeFlowingFluid.Source::new)
+            .bucket()
+            .build()
+            .register();
+
     public static void register() {}
 }

@@ -145,7 +145,7 @@ repositories {
         url = 'https://maven.tterrag.com/'
     }
 
-    //For JEI
+    // For JEI
     maven {
         name = "Progwml6's maven"
         url = "https://maven.blamejared.com/"
@@ -159,7 +159,7 @@ repositories {
         url = "https://modmaven.dev"
     }
 
-    //For Jade
+    // For Jade
     maven {
         url "https://www.cursemaven.com"
         content {
